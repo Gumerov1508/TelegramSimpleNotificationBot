@@ -22,7 +22,7 @@ public class User {
     @Column(name = "time_zone", columnDefinition = "default 0")
     private int timeZone;
 
-    @OneToOne(mappedBy="user")
+    @OneToMany(mappedBy="user")
     private List<Event> events;
 
     @Column(name = "on_off")
