@@ -6,10 +6,12 @@ import org.example.NotificationBot.cash.EventCash;
 import org.example.NotificationBot.entity.Event;
 import org.example.NotificationBot.model.BotState;
 import org.example.NotificationBot.service.MenuService;
+import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.methods.BotApiMethod;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
 
+@Component
 public class MessageHandler {
     private final UserDAO userDAO;
     private final MenuService menuService;
