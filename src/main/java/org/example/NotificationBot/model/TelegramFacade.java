@@ -1,8 +1,8 @@
 package org.example.NotificationBot.model;
 
 import org.example.NotificationBot.cash.BotStateCash;
-import org.example.NotificationBot.model.handler.CallbackQueryHandler;
-import org.example.NotificationBot.model.handler.MessageHandler;
+import org.example.NotificationBot.handler.CallbackQueryHandler;
+import org.example.NotificationBot.handler.MessageHandler;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import org.springframework.stereotype.Component;
@@ -15,7 +15,7 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class TelegramFacade {
 
-    final org.example.NotificationBot.model.handler.MessageHandler messageHandler;
+    final MessageHandler messageHandler;
     final CallbackQueryHandler callbackQueryHandler;
     final BotStateCash botStateCash;
 

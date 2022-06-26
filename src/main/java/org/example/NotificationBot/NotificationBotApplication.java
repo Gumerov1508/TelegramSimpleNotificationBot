@@ -5,9 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 
-// @SpringBootApplication
-@SpringBootApplication(scanBasePackages = {"org.example.NotificationBot.repo"} , exclude = JpaRepositoriesAutoConfiguration.class)
 
+@SpringBootApplication // (scanBasePackages = {"org.example.NotificationBot.repo"} , exclude = JpaRepositoriesAutoConfiguration.class)
+@ComponentScan({"org.example.NotificationBot.repo"})
 public class NotificationBotApplication {
 
 	public static void main(String[] args) {

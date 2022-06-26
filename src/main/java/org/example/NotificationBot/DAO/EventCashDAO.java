@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-
 //handles events not dispatched after reboot heroku
 public class EventCashDAO {
 

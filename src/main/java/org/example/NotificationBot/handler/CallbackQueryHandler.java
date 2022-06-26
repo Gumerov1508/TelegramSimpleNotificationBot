@@ -1,4 +1,4 @@
-package org.example.NotificationBot.model.handler;
+package org.example.NotificationBot.handler;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
