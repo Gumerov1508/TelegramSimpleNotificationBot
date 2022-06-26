@@ -2,17 +2,19 @@ package org.example.NotificationBot.entity;
 
 
 import org.example.NotificationBot.service.EventFreq;
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
 
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.Date;
+
+
 
 @Entity
 @Table(name = "user_events")
@@ -39,7 +41,7 @@ public class Event {
     @ManyToOne(fetch=FetchType.EAGER)
     @JoinColumn(name="user_id")
     @OnDelete(action = OnDeleteAction.CASCADE)
-    private com.example.NotificationBot.entity.User user;
+    private org.example.NotificationBot.entity.User user;
 
     public Event() {
     }

@@ -1,8 +1,8 @@
 package org.example.NotificationBot.service;
 
-import com.example.NotificationBot.DAO.EventCashDAO;
-import com.example.NotificationBot.config.ApplicationContextProvider;
-import com.example.NotificationBot.model.TelegramBot;
+import org.example.NotificationBot.DAO.EventCashDAO;
+import org.example.NotificationBot.config.ApplicationContextProvider;
+import org.example.NotificationBot.model.TelegramBot;
 import lombok.SneakyThrows;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 

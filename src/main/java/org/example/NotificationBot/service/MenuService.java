@@ -1,7 +1,7 @@
 package org.example.NotificationBot.service;
 
-import com.example.NotificationBot.DAO.UserDAO;
-import com.example.NotificationBot.entity.User;
+import org.example.NotificationBot.DAO.UserDAO;
+import org.example.NotificationBot.entity.User;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Value;

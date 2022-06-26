@@ -1,8 +1,8 @@
 package org.example.NotificationBot.model;
 
-import com.example.NotificationBot.cash.BotStateCash;
-import com.example.NotificationBot.model.handler.CallbackQueryHandler;
-import com.example.NotificationBot.model.handler.MessageHandler;
+import org.example.NotificationBot.cash.BotStateCash;
+import org.example.NotificationBot.model.handler.CallbackQueryHandler;
+import org.example.NotificationBot.model.handler.MessageHandler;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import org.springframework.beans.factory.annotation.Value;
@@ -17,7 +17,7 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class TelegramFacade {
 
-    final com.example.NotificationBot.model.handler.MessageHandler messageHandler;
+    final org.example.NotificationBot.model.handler.MessageHandler messageHandler;
     final CallbackQueryHandler callbackQueryHandler;
     final BotStateCash botStateCash;
 

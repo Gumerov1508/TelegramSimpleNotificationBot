@@ -5,11 +5,11 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
-import com.example.NotificationBot.DAO.EventCashDAO;
-import com.example.NotificationBot.DAO.EventDAO;
-import com.example.NotificationBot.entity.Event;
-import com.example.NotificationBot.entity.EventCashEntity;
-import com.example.NotificationBot.service.EventFreq;
+import org.example.NotificationBot.DAO.EventCashDAO;
+import org.example.NotificationBot.DAO.EventDAO;
+import org.example.NotificationBot.entity.Event;
+import org.example.NotificationBot.entity.EventCashEntity;
+import org.example.NotificationBot.service.EventFreq;
 
 import java.util.Calendar;
 import java.util.Date;

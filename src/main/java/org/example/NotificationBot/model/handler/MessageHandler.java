@@ -1,8 +1,8 @@
 package org.example.NotificationBot.model.handler;
 
-import com.example.NotificationBot.DAO.UserDAO;
-import com.example.NotificationBot.cash.BotStateCash;
-import com.example.NotificationBot.cash.EventCash;
+import org.example.NotificationBot.DAO.UserDAO;
+import org.example.NotificationBot.cash.BotStateCash;
+import org.example.NotificationBot.cash.EventCash;
 import org.example.NotificationBot.entity.Event;
 import org.example.NotificationBot.model.BotState;
 import org.example.NotificationBot.service.MenuService;

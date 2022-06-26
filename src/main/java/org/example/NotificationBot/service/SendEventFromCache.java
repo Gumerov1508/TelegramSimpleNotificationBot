@@ -1,8 +1,8 @@
 package org.example.NotificationBot.service;
 
-import com.example.NotificationBot.DAO.EventCashDAO;
-import com.example.NotificationBot.entity.EventCashEntity;
-import com.example.NotificationBot.model.TelegramBot;
+import org.example.NotificationBot.DAO.EventCashDAO;
+import org.example.NotificationBot.entity.EventCashEntity;
+import org.example.NotificationBot.model.TelegramBot;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

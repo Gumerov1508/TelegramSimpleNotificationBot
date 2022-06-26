@@ -1,6 +1,6 @@
 package org.example.NotificationBot.controller;
 
-import com.example.NotificationBot.model.TelegramBot;
+import org.example.NotificationBot.model.TelegramBot;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

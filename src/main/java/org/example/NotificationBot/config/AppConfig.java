@@ -1,8 +1,8 @@
 package org.example.NotificationBot.config;
 
 import org.example.NotificationBot.botconfig.TelegramBotConfig;
-import com.example.NotificationBot.model.TelegramBot;
-import com.example.NotificationBot.model.TelegramFacade;
+import org.example.NotificationBot.model.TelegramBot;
+import org.example.NotificationBot.model.TelegramFacade;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.telegram.telegrambots.meta.api.methods.updates.SetWebhook;
