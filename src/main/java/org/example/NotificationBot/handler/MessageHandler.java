@@ -29,21 +29,21 @@ public class MessageHandler {
     }
 
 
-    public BotApiMethod<?> handle(Message message, BotState botState){
+    public BotApiMethod<?> handle(Message message, BotState botState) {
         long userId = message.getFrom().getId();
         long chatId = message.getChatId();
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(String.valueOf(chatId));
 
-        if(!userDAO.isExists(userId)){
+        if (!userDAO.isExists(userId)) {
             return eventHandler.saveNewUser(message, userId, sendMessage);
         }
         botStateCash.saveBotState(userId, botState);
 
-        switch (botState.name()){
+        switch (botState.name()) {
             case ("START"):
-            return menuService.getMainMenuMessage(message.getChatId(),
-                    "Воспользуйтесь главным меню", userId);
+                return menuService.getMainMenuMessage(message.getChatId(),
+                        "Воспользуйтесь главным меню", userId);
             case ("ENTERTIME"):
                 //set time zone user. for correct sent event
                 return eventHandler.enterLocalTimeUser(message);

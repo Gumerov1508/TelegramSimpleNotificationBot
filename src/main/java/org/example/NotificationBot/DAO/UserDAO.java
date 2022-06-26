@@ -2,14 +2,18 @@ package org.example.NotificationBot.DAO;
 
 import org.example.NotificationBot.entity.User;
 import org.example.NotificationBot.repo.UserRepository;
+
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class UserDAO {
+
     private final UserRepository userRepository;
 
-    @Autowired
+     @Autowired
     public UserDAO(UserRepository userRepository){
         this.userRepository = userRepository;
     }

@@ -4,6 +4,7 @@ import org.example.NotificationBot.entity.Event;
 import org.example.NotificationBot.entity.User;
 import org.example.NotificationBot.repo.EventRepository;
 import org.example.NotificationBot.repo.UserRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,10 +12,11 @@ import java.util.List;
 
 @Service
 public class EventDAO {
+
     private final UserRepository userRepository;
     private final EventRepository eventRepository;
 
-@Autowired
+    @Autowired
     public EventDAO(UserRepository userRepository, EventRepository eventRepository) {
         this.userRepository = userRepository;
         this.eventRepository = eventRepository;
