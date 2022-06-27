@@ -1,4 +1,4 @@
-package org.example.NotificationBot.handler;
+package org.example.NotificationBot.model.handler;
 
 import org.example.NotificationBot.DAO.UserDAO;
 import org.example.NotificationBot.cash.BotStateCash;

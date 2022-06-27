@@ -1,10 +1,11 @@
 package org.example.NotificationBot.model;
 
 import org.example.NotificationBot.cash.BotStateCash;
-import org.example.NotificationBot.handler.CallbackQueryHandler;
-import org.example.NotificationBot.handler.MessageHandler;
+import org.example.NotificationBot.model.handler.CallbackQueryHandler;
+import org.example.NotificationBot.model.handler.MessageHandler;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.methods.BotApiMethod;
 import org.telegram.telegrambots.meta.api.objects.CallbackQuery;
@@ -19,7 +20,7 @@ public class TelegramFacade {
     final CallbackQueryHandler callbackQueryHandler;
     final BotStateCash botStateCash;
 
-
+    @Value("${telegrambot.adminId}")
     int adminId;
 
     public TelegramFacade(MessageHandler messageHandler, CallbackQueryHandler callbackQueryHandler, BotStateCash botStateCash) {
