@@ -9,7 +9,7 @@ import org.example.NotificationBot.DAO.EventCashDAO;
 import org.example.NotificationBot.DAO.EventDAO;
 import org.example.NotificationBot.entity.Event;
 import org.example.NotificationBot.entity.EventCashEntity;
-import org.example.NotificationBot.service.EventFreq;
+import org.example.NotificationBot.model.EventFreq;
 
 import java.util.Calendar;
 import java.util.Date;

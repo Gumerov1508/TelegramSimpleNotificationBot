@@ -13,7 +13,7 @@ import org.example.NotificationBot.cash.EventCash;
 import org.example.NotificationBot.entity.Event;
 import org.example.NotificationBot.entity.User;
 import org.example.NotificationBot.model.BotState;
-import org.example.NotificationBot.service.EventFreq;
+import org.example.NotificationBot.model.EventFreq;
 import org.example.NotificationBot.service.MenuService;
 
 import javax.persistence.EntityNotFoundException;

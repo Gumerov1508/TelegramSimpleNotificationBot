@@ -1,11 +1,13 @@
 package org.example.NotificationBot.service;
 
+import lombok.Setter;
 import org.example.NotificationBot.DAO.EventCashDAO;
 import org.example.NotificationBot.config.ApplicationContextProvider;
 import org.example.NotificationBot.model.TelegramBot;
 import lombok.SneakyThrows;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 
+@Setter
 public class SendEvent extends Thread {
 
 

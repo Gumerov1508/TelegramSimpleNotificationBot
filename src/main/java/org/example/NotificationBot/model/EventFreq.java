@@ -1,4 +1,4 @@
-package org.example.NotificationBot.service;
+package org.example.NotificationBot.model;
 
 public enum EventFreq {
     TIME, //will work once and leave

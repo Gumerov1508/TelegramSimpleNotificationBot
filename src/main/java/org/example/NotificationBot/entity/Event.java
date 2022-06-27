@@ -1,7 +1,7 @@
 package org.example.NotificationBot.entity;
 
 
-import org.example.NotificationBot.service.EventFreq;
+import org.example.NotificationBot.model.EventFreq;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.OnDelete;
