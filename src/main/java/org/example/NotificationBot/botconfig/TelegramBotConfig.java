@@ -14,12 +14,12 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class TelegramBotConfig {
 
 
-    //@Value("${telegramBot.webHookPath}")
-    String webHookPath = "https://1c16-178-214-248-183.eu.ngrok.io";
-    //@Value("${telegramBot.userName}")
-    String userName  = "myNewTestSmakayevoIshimbayUfaBOt";
-   // @Value("${telegramBot.botToken}")
-    String botToken  = "5524533853:AAHfk0nylA_PnIASkfhwLKqq0XJhU_QoiiQ";
+    @Value("${telegramBot.webHookPath}")
+    String webHookPath;
+    @Value("${telegramBot.userName}")
+    String userName;
+    @Value("${telegramBot.botToken}")
+    String botToken;
 
 
     public String getWebHookPath() {
