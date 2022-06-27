@@ -24,7 +24,7 @@ public class MenuService {
 
     private UserDAO userDAO;
 
-    // @Value("${telegrambot.adminId}")
+    @Value("${telegrambot.adminId}")
     private int admin_id;
 
     public MenuService(UserDAO userDAO) {
