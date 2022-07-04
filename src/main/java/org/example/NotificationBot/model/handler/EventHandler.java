@@ -88,7 +88,7 @@ public class EventHandler {
         try {
             num = Integer.parseInt(message.getText());
         } catch (NumberFormatException e) {
-            sendMessage.setText("Введенные символы не число, посторите ввод");
+            sendMessage.setText("Введенные символы не число, повторите ввод");
             return sendMessage;
         }
         if (num < 0 || num > 24) {
@@ -306,7 +306,7 @@ public class EventHandler {
         event.setDescription(description);
         //save to cache
         eventCash.saveEventCash(userId, event);
-        sendMessage.setText("Введите дату предстоящего события в формате DD.MM.YYYY HH:MM, например - 02.06.2021 21:24, либо 02.06.2021");
+        sendMessage.setText("Введите дату предстоящего события в формате DD.MM.YYYY HH:MM, например - 02.06.2021 21:24");
         return sendMessage;
     }
 
