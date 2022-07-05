@@ -30,9 +30,8 @@ public class EventService {
         this.eventCashDAO = eventCashDAO;
     }
 
-    //start service in 0:00 every day
-    @Scheduled(cron = "0 0 0 * * *")
-    // @Scheduled(fixedRateString = "${eventservice.period}")
+
+    @Scheduled(cron = "*/10 * * * * *" , zone="Asia/Yekaterinburg")
     private void eventService() {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(new Date());
