@@ -11,6 +11,6 @@ public class SimpleTask extends TimerTask {
 
     @Override
     public void run() {
-        sendEvent.run();
+        sendEvent.start();
     }
 }
