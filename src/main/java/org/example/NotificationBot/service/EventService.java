@@ -31,7 +31,7 @@ public class EventService {
     }
 
 
-    @Scheduled(cron = "0 40 21 * * *" , zone="Asia/Yekaterinburg")
+    @Scheduled(cron = "0 56 21 * * *" , zone="Asia/Yekaterinburg")
     private void eventService() {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(new Date());
@@ -53,7 +53,7 @@ public class EventService {
                 switch (eventFreq.name()) {
                     case "TIME": //if one time - remove event
                         if (day == day1 && month == month1 && year == year1) {
-                            eventDAO.remove(event);
+                            // eventDAO.remove(event);
                             return true;
                         }else
                             return false;
