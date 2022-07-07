@@ -86,7 +86,6 @@ public class EventService {
             SendEvent sendEvent = new SendEvent();
             sendEvent.setSendMessage(new SendMessage(userId, description));
             sendEvent.setEventCashId(eventCashEntity.getId());
-
             new Timer().schedule(new SimpleTask(sendEvent), calendarUserTime.getTime());
         }
     }
