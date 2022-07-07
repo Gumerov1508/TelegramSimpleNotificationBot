@@ -31,7 +31,7 @@ public class EventService {
     }
 
 
-    @Scheduled(cron = "0 01 00 * * *" , zone="Asia/Yekaterinburg")
+    @Scheduled(cron = "0 0 0 * * *" , zone="Asia/Yekaterinburg")
     private void eventService() {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(new Date());
