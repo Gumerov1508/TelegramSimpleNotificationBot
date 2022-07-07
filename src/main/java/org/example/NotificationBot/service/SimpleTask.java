@@ -9,9 +9,9 @@ public class SimpleTask extends TimerTask {
         this.sendEvent = sendEvent;
     }
 
-    
+
     @Override
     public void run() {
-        sendEvent.run();
+        sendEvent.start();
     }
 }
