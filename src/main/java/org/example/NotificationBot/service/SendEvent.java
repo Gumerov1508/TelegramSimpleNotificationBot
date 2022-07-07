@@ -27,14 +27,16 @@ public class SendEvent extends Thread {
     public void run() {
         TelegramBot telegramBot = ApplicationContextProvider.getApplicationContext().getBean(TelegramBot.class);
         EventCashDAO eventCashDAO = ApplicationContextProvider.getApplicationContext().getBean(EventCashDAO.class);
-        Event event = ApplicationContextProvider.getApplicationContext().getBean(Event.class);
-        EventDAO eventDAO = ApplicationContextProvider.getApplicationContext().getBean(EventDAO.class);
+        // Event event = ApplicationContextProvider.getApplicationContext().getBean(Event.class);
+        // EventDAO eventDAO = ApplicationContextProvider.getApplicationContext().getBean(EventDAO.class);
         telegramBot.execute(sendMessage);
         eventCashDAO.delete(eventCashId);
+        /*
         if(event.getFreq().toString() == "TIME")
         {
             eventDAO.remove(event);
         }
+        */
 
     }
 
