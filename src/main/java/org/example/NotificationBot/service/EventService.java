@@ -31,7 +31,7 @@ public class EventService {
     }
 
 
-    @Scheduled(cron = "0 40 20 * * *" , zone="Asia/Yekaterinburg")
+    @Scheduled(cron = "0 40 21 * * *" , zone="Asia/Yekaterinburg")
     private void eventService() {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(new Date());
@@ -72,7 +72,8 @@ public class EventService {
             //set user event time
             Calendar calendarUserTime = getDateUserTimeZone(event);
             int hour1 = calendarUserTime.get(Calendar.HOUR_OF_DAY);
-            calendarUserTime.set(year, month, day, hour1, 0, 0);
+            int minute1 = calendarUserTime.get(Calendar.MINUTE);
+            calendarUserTime.set(year, month, day, hour1, minute1, 0);
 
             String description = event.getDescription();
             String userId = String.valueOf(event.getUser().getId());
