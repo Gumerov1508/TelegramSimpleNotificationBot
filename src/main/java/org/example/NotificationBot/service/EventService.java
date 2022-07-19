@@ -31,7 +31,7 @@ public class EventService {
     }
 
 
-    @Scheduled(cron = "0 40 23 * * *" , zone="Asia/Yekaterinburg")
+    @Scheduled(cron = "0 15 22 * * *" , zone="Asia/Yekaterinburg")
     private void eventService() {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(new Date());
@@ -57,6 +57,8 @@ public class EventService {
                             return true;
                         }else
                             return false;
+
+
                     case "EVERYDAY":
                         return true;
                     case "MONTH":
