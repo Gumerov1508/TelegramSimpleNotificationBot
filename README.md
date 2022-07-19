@@ -5,7 +5,7 @@
 
 # Запуск бота
 
-1.	Зарегестрировать бота в botFather
+1.	Зарегистрировать бота в botFather
 2.	Создать приложение на heroku. 
 3.	Создать базу на heroku (можно и локальную)
 4.	Создать 3 таблички в базе: 
@@ -49,7 +49,7 @@ CREATE TABLE event_cash
 
 6. Задеплоить на heroku.
 
-7. Зарегестрировать webhook: 
+7. Зарегистрировать webhook: 
 Заменить в следующем адресе BOT_TOKEN и HEROKU_APP_URL на свой бот токен и url приложения heroku. 
 
 https://api.telegram.org/botBOT_TOKEN/setWebhook?url=HEROKU_APP_URL
